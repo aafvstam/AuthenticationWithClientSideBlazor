@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/TestClientAuth/Server/Data/TestClientAuth.db
+/TestClientAuth/Server/Data/TestClientAuth.db-shm
+/TestClientAuth/Server/Data/TestClientAuth.db-wal

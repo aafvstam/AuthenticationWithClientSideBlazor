@@ -38,7 +38,7 @@
 
     [Parameter]
     [SupplyParameterFromQuery]
-	public string ReturnUrl { get; set; }
+    public string ReturnUrl { get; set; } = string.Empty;
 
     private LoginModel loginModel = new LoginModel();
     private bool ShowErrors;
@@ -52,7 +52,14 @@
 
         if (result.Successful)
         {
-            NavigationManager.NavigateTo(ReturnUrl);
+            if (!string.IsNullOrEmpty(ReturnUrl))
+            {
+                NavigationManager.NavigateTo(ReturnUrl);
+            }
+            else
+            {
+                NavigationManager.NavigateTo("/");
+            }
         }
         else
         {

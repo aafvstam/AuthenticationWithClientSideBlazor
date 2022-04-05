@@ -15,8 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\TestClientAuth.Shared\TestClientAuth.Shared.csproj" />
-    <ProjectReference Include="..\Shared\TestClientAuth.Shared.csproj" />
+        <ProjectReference Include="..\Shared\TestClientAuth.Shared.csproj" />
   </ItemGroup>
 
 </Project>
